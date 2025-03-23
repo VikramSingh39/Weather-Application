@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="icon" href="/public/sun.png">
+      <title>Weather App</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+</head>
+<body>
+      <div class="card">
+            <div class="search">
+                  <input id="search-input" type="text" placeholder="Enter city name" spellcheck="false">
+                  <i class="ri-search-line search-icon"></i>
+            </div>
+            <div class="error" id="show_error">* Invalid City Name</div>
+            <!-- Weather Details  -->
+            <div class="weather" id="weather">
+                  <img class="weather-icon" id="weather-img" src="/public/sun.png" alt="">
+                  <h1 class="temp" id="temp"></h1>
+                  <h2 class="city" id="city"></h2>
+
+                  <!-- Humidity and wind -->
+                  <div class="details">
+                        <div class="col">
+                              <img src="/public/humidity.png" alt="">
+                              <div>
+                                   <p class="humidity" id="humidity"></p>
+                                    <p>Humidity</p>
+                              </div>
+                        </div>
+
+                        <div class="col">
+                              <img src="/public/wind.png" alt="">
+                              <div>
+                                    <p class="wind" id="wind"></p>
+                                    <p>Wind Speed</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</body>
+</html>
